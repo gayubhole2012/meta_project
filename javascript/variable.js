@@ -1,4 +1,6 @@
-var petDog="Rex";
+//   Variable      
+
+/*var petDog="Rex";
 var petCat="Pepper";
 var catSound="purr";
 var dogSound="woof";
@@ -9,4 +11,74 @@ console.log("My pet dog's name is:",petDog);
 console.log("My pet cat's name is:",petCat);
 console.log(petDog,"says",dogSound);
 console.log(petCat,"says",catSound);
-console.log(petCat,"now says",catSound);
+console.log(petCat,"now says",catSound);*/
+
+
+// Operator
+/* Arthmatic operator
+ +,-,*, / 
+ comparision operator
+ < , > , ==
+ logical operator
+ &&, ||, !=
+*/
+
+/*var currentTime = 10;
+console.log(currentTime > 9 && currentTime < 15);
+currentTime;*/
+
+/*var currentTime = 7;
+console.log(currentTime < 9 || currentTime > 17);*/
+
+/*var petHungry = true;
+console.log('Feeding the pet');
+console.log("Pet is hungry: ", !petHungry);
+console.log(petHungry);*/
+
+console.log(22%3);
+
+console.log(5 !== "5") // output:true
+console.log(5 !== 5)   //output: false
+
+var longString = "";
+longString += "Once";
+longString += " upon";
+longString += " a";
+longString += " time";
+longString += "...";
+console.log(longString); // output:Once upon a time...
+
+var overtime = 1;
+overtime += 2;
+overtime += 1;
+overtime += 2;
+overtime += 3;
+console.log(overtime); // output:9
+
+var score = 8;
+console.log("Mid-level skills:",score>0 && score<10); // output: Mid-level skills: true".
+
+var timeRemaining = 0;
+var energy = 10;
+console.log("Game Over",timeRemaining ==0 || energy ==0); // output: Game Over: true
+
+var num1=2;
+var num2= 5;
+var test1= num1%2;
+var test2= num2%2;
+var result1= test1==0;
+var result2= test2==0;
+console.log("Is",num1, "an even number?", result1);
+console.log("Is",num2, "an even number?",result2); // output: Is 2 an even number? true
+                                                              //Is 5 an even number? false
+
+
+var now ="Now in";
+var three=3;
+var d="D!";
+console.log(now + three  +  d); // output: Now in3D!
+
+var counter = 0;
+counter+= 5;
+counter+= 3;
+console.log(counter);  // output: 8
