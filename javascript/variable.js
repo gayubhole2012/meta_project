@@ -159,3 +159,58 @@ switch(place) {
         console.log('There is no such day');
     
     } // output:There is no such day
+
+    //    loop 
+    for(i=1; i<=3; i++){
+      console.log(i);
+    }
+    console.log("Go!"); //output:1
+    //2
+    //3
+    //Go!
+    
+    for(i=10; i>0; i--){
+      console.log(i);
+    }
+    console.log("Happy")
+
+
+
+
+
+    counter= 1;
+    while(counter < 6){
+      console.log(counter);
+      counter++;
+    }
+    console.log('new'); //output:1 2 3 4 5
+
+    counter =5 ;
+    while(counter > 0){
+      console.log(counter);
+      counter =counter -1;
+    }
+    console.log('completed');
+
+
+var counter = 2018;
+while(counter < 2023){
+    console.log(counter);
+    counter++;
+}
+console.log('not good');
+
+
+// nested loop 
+
+for(var year =2022; year< 2025; year++){
+  console.log(year);
+}     // output: 2022 2023 2024
+
+
+for(var year=2022; year<2025; year++){
+  console.log(year);
+  for(var month=6; month<9; month++){
+    console.log('---------',month);
+  }
+}
