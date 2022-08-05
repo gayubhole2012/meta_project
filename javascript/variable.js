@@ -33,7 +33,7 @@ console.log(currentTime < 9 || currentTime > 17);*/
 /*var petHungry = true;
 console.log('Feeding the pet');
 console.log("Pet is hungry: ", !petHungry);
-console.log(petHungry);*/
+console.log(petHungry);
 
 console.log(22%3);
 
@@ -81,4 +81,54 @@ console.log(now + three  +  d); // output: Now in3D!
 var counter = 0;
 counter+= 5;
 counter+= 3;
-console.log(counter);  // output: 8
+console.log(counter);  // output: 8  */
+
+
+//       conditional statement
+
+var result = 50;
+if(result > 40){
+  console.log("you passed test");
+}else{
+  console.log("You are not passed test");
+}  //output: you passed test
+
+var place = "first";
+if(place == "first"){
+  console.log("Gold");
+} else if(place == "second"){
+  console.log("silver");
+}else if(place == "third"){
+  console.log("bronze");
+}
+else{
+  console.log("no medal");
+}      // output:Gold
+
+var place= 'fifth';
+switch(place) {
+  case 'first' :
+  console.log('Gold');
+  break;
+  case 'second' :
+    console.log('silver');
+    break;
+    case 'third':
+      console.log('bronze');
+      break;
+      default:
+        console.log('No medal');
+    }      // output:No medal
+
+
+    var age = 45;
+    if(age >= 65){
+        console.log("You get your income from your pension");
+    } else if(age < 65 && age >=18){
+        console.log("Each month you get a salary.");
+    } else if(age > 18){
+        console.log("You get an allowance.");
+    }else{
+        console.log("The value of the age variable is not numerical");
+    }  //output: Each month you get a salary.
+    
