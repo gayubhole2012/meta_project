@@ -214,3 +214,135 @@ for(var year=2022; year<2025; year++){
     console.log('---------',month);
   }
 }
+
+for (var i = 100; i > 10; i = i - 10) {
+  for (var j = 10; j > 4; j = j - 5) {
+      console.log(i + " divided by " + j + " equals " + i / j);
+  }
+}
+
+var cubes = 'ABCDEFG';
+for (var i = 0; i < 7; i++) {
+  var styles = "font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
+  console.log("%c" + cubes[i], styles)
+}
+
+// practice 
+for(var i=1; i<=10; i++){
+  if(i==1){
+      console.log("Gold medal");
+  }
+  else if(i==2){
+      console.log("Silver medal");
+  }
+  else if(i==3){
+      console.log("Bronze medal");
+  }
+  else{
+      console.log(i);
+  }
+}  /*output:Gold medal
+Silver medal
+Bronze medal
+4
+5
+6
+7
+8
+9
+10
+
+
+for(var i=1; i<=10; i++){
+  switch(i){
+      case 1:
+      console.log('Gold medal')
+      break;
+      case 2:
+      console.log('Silver medal');
+      break;
+      case 3:
+      console.log('Bronze medal');
+      break;
+      default:
+      console.log(i);
+  }
+  } //output: Gold medal Silver medal Bronze medal 4 5 6 7 8 9 10
+
+  if(i < 5) {
+    console.log("Hello");
+  } else {
+    console.log("Goodbye");
+  } //output: Goodbuy
+ 
+  if(i == 0 && i == 1) {
+    console.log("Hello");
+  } else {
+    console.log("Goodbye");
+  }  // output: Goodbuy
+ 
+
+
+  for (i = 0; i < 2; i++) {
+    console.log("Hello");
+} // hello hello
+
+var i = 0;
+while(i < 3) {
+  console.log("Hello");
+  i++;
+}  //\output: hello hello hello
+
+
+if(i <= 5) {
+  console.log("Hello");
+} else if(i <= 10) {
+  console.log("Goodnight");
+} else {
+  console.log("Goodbye");
+} //output: Hello
+
+
+
+if(i == 2 || i == 3) {
+  console.log("Hello");
+} else {
+  console.log("Goodbye");
+} //output: Hello
+
+switch(i) {
+  case 1:
+    console.log("Hello");
+    break;
+  case 2:
+    console.log("Goodnight");
+    break;
+  case 3:
+    console.log("Goodbye");
+    break;
+} //output : Goodbye
+
+for(var i = 0; i <= 5; i++) {
+  console.log("Hello");
+}
+
+var i = 3;
+  var j = 5;
+
+  if(i == 3 && j < 5) {
+    console.log("Hello");
+  } else {
+    console.log("Goodbye");
+  }
+
+  var i = 7;
+  var j = 2;
+
+  if(i < 7 || j < 5) {
+    console.log("Hello");
+  } else {
+    console.log("Goodbye");
+  }        */
+
+
+
