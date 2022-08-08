@@ -42,3 +42,14 @@ var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
 listArrayItems(colors); //output: 0 tomato! 100 orange 200 yellow 300 green 400 blue 500 purple 600 pink
 
 
+function letterFinder(word,match){
+  for(var i=0; i<=word.length; i++){
+      if(word[i]== match){
+       console.log('Found the', match, 'at', i)
+      }else{
+          console.log('---No match found at', i)
+      }
+     
+  }
+}
+letterFinder("test","t"); //output:Found the t at   ---No match found at 1    ---No match found at 2     Found the t at 3      ---No match found at 4
