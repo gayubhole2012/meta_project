@@ -125,4 +125,7 @@ console.log(greet + user );  // output:HelloRobin
 console.log(greet.concat(user));  //output:HelloRobin
 
 var greet = "Hello, ";
-var place = "World"
+var place = "World";
+console.log(greet.length);  //output:7
+console.log(greet.charAt(2));
+
