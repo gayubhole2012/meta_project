@@ -79,7 +79,7 @@ console.log(fruit);   //output: [ 'apple', 'pear' ]
   arr.push('three');
   //console.log(arr); // output:[ 'one', 'two', 'three' ]
  
-}*/
+}*
 
 function arrayBuilder(one,two,three) {
   var arr = [];
@@ -92,3 +92,37 @@ var simpleArr =arrayBuilder('apple', 'pear', 'plum');
 var simpleArr2 = arrayBuilder('wedd','asee','seded');
 console.log(simpleArr); 
 console.log(simpleArr2);    // output: [ 'apple', 'pear', 'plum']    [ 'wedd', 'asee', 'seded' ]
+
+
+var rounded = Math.ceil(0.99);
+console.log(rounded);  // output: 1*/
+
+// array iterable
+var veggies = ['onion','parsly','carrot'];
+
+console.log(veggies.length);
+console.log(veggies[0]);
+console.log(veggies[2]);
+
+for(var i = 0;  i < veggies.length; i++){
+  console.log(veggies[i]);//output: 3   onion   carrot    onion    parsly   carrot
+}
+
+
+//string are iterable
+ var greeting = 'Howdy';
+ console.log(greeting.length);
+ console.log(greeting[0]);
+ console.log(greeting[2]);
+for( var i = 0; i < greeting.length; i++){
+  console.log(greeting[i]);
+}
+
+var greet = 'Hello';
+var user = 'Robin';
+//console.log(greet.pop()); //output: error greet.pop is not a function
+console.log(greet + user );  // output:HelloRobin
+console.log(greet.concat(user));  //output:HelloRobin
+
+var greet = "Hello, ";
+var place = "World"
