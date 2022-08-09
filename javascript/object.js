@@ -127,5 +127,23 @@ console.log(greet.concat(user));  //output:HelloRobin
 var greet = "Hello, ";
 var place = "World";
 console.log(greet.length);  //output:7
-console.log(greet.charAt(2));
+console.log(greet.charAt(2)); //output:l
+
+// exercise
+var clothes = [ ];
+clothes.push('jeans');
+clothes.push('shirt');
+clothes.push('jumpsuit');
+clothes.push('tshrit');
+clothes.push('skirt');
+console.log(clothes);
+clothes.pop('skirt');
+console.log(clothes);
+clothes.push('skarf');
+console.log(clothes);
+console.log(clothes[3]);
+ var favcar = {}
+  favcar.color ="pink";
+  favcar.covertible = "true";
+  console.log(favcar);
 
