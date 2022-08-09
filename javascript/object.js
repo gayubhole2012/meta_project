@@ -147,3 +147,19 @@ console.log(clothes[3]);
   favcar.covertible = "true";
   console.log(favcar);
 
+var car = {};
+car.color = "red"; 
+car.mileage = 98765;
+console.log(car);  //output: { color: 'red', mileage: 98765 }
+car.turnTheKey = function(){
+  console.log('engine running'); 
+}
+console.log(car); //output: { color: 'red', mileage: 98765, turnTheKey: [Function (anonymous)] }
+
+car.lightsOn = function(){
+  console.log('The lights are on');
+}
+console.log(car);
+car.turnTheKey();
+car.lightsOn();
+
