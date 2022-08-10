@@ -95,7 +95,7 @@ console.log(simpleArr2);    // output: [ 'apple', 'pear', 'plum']    [ 'wedd', '
 
 
 var rounded = Math.ceil(0.99);
-console.log(rounded);  // output: 1*/
+console.log(rounded);  // output: 1
 
 // array iterable
 var veggies = ['onion','parsly','carrot'];
@@ -194,3 +194,13 @@ var dog = {
 };
 dog["type"] = "corgi";
 console.log(dog);
+
+var result = null;
+  console.log(result);  //output:null   */
+
+  try {​
+    console.log('Hello');
+  } catch(err) {​
+    console.log('Goodbye');
+  }​
+
