@@ -18,7 +18,7 @@ var purchase2= {
     console.log('Total Price:',calculation);
   }
 }
-purchase2.totalPrice();*/
+purchase2.totalPrice();*/       //
 
 
 //with this keyword
@@ -425,7 +425,7 @@ console.log(intern())
       
       const manager = new Worker('Alice', 30, 120, 100, 30);
   
-      manager.doSomethingFun()
+      manager.doSomethingFun()      //method on the manager object. Then `return` the manager object.
       return manager;
   }*/
 
@@ -462,11 +462,10 @@ class Cat extends Animal {
     this.noise = "meow";
   }
 }
-
 var result = new Animal();
 console.log(result.noise); //output: undefined*/
 
-class Person {
+/*class Person {
   sayHello() {
       console.log("Hello");
   }
@@ -479,5 +478,5 @@ class Friend extends Person {
 }
 
 var result = new Friend();
-result.sayHello(); //output:Hey
+result.sayHello(); //output:Hey */
 
