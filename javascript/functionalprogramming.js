@@ -6,7 +6,6 @@ function covertCuerrency(amount,rate){
 }
 currencyTwo = covertCuerrency(currencyOne,exchageRate);
 console.log(currencyTwo);
-
 console.log('Hello');
 
 //recursion function
