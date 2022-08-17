@@ -23,3 +23,5 @@ expect(concatSrings("123","456")).toBe("123456");
      //Jest is a JavaScript testing framework. It's often used for testing code like React, a JavaScript library 
      //--Besides plain JavaScript and React code just allows you to test Babel, TypeScript, Node, Angular, Vue, and various other frameworks. Jest also supports code coverage.
      //Mocking allows you to separate the code that you are testing from it's related dependencies. In other words, you can use the mocking features to make sure that your unit testing is stand-alone. 
+
+     //T D D for short is a streamlined process of writing code that will satisfy some requirements.
