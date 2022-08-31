@@ -101,7 +101,7 @@ img{
   border:0;
 }*/
 
-.row{
+/*.row{
   display:flex;
   align-items: stretch;
 }
@@ -132,4 +132,33 @@ justify-content: flex-start;
 
 .barito{
   background-color: green;
+}*/
+
+/* ----------grid-----------*/
+body{
+  margin: 20px;
+}
+
+.box{
+  background-color: #247;
+  color: #ffff;
+  margin: 10px;
+  padding:15px ;
+  border-radius:10px;
+  font-size: 150%;
+}
+
+.container{
+  display: grid;
+  /*grid-template-columns: 100px 100px 100px;*/
+  /*grid-template-rows: 2fr 1fr;*/
+  /*grid-template-rows: auto;*/
+  /*grid-auto-rows: 100px;*/
+  /*grid-gap: 10px;*/
+  /*background-color: rgb(202,96,96);*/
+  grid-template-columns: repeat(3,100px);
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 10px;
+  background-color: rgb(202,96,96)
+
 }

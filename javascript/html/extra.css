@@ -1,0 +1,61 @@
+/*body{
+  display: grid;
+  height: 150vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header{
+  background-color: #2C3333;
+  text-align: center;
+  padding: 2em;
+}
+
+main{
+  background-color: #3946b3;
+  text-align: center;
+  padding:2em;
+}
+
+footer{
+  background-color: aquamarine;
+  text-align: center;
+  padding: 2em;
+}*/
+
+/*----------------Grid tewlve------------*/
+.parent{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+
+.segment{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  grid-template-rows: 100px;
+}
+
+.twelve{
+  background-color: violet;
+  grid-column: 1/ span 12;
+}
+
+.eight{
+  background-color: aqua;
+  grid-column: 5/ span 8;
+}
+ 
+.six{
+  background-color: brown;
+  grid-column: 4/ span 6;
+}
+
+.four{
+  background-color: bisque;
+  grid-column: 1/ span 4;
+}
+
+.seven{
+  background-color: darkseagreen;
+  grid-column: 3/ span 7;
+}
