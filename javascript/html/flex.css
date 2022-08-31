@@ -1,0 +1,135 @@
+/*.box{
+  background-color: aquamarine;
+  border-radius: 5px;
+  margin:2px;
+  padding:10px;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items:flex-end;
+  flex: 0 1 auto;
+}
+
+.box3{
+  background-color: blanchedalmond;
+  align-self: center;
+}
+
+.box5{
+  background-color: blanchedalmond;
+  align-self: center;
+  flex: 1 1 auto;
+}*/
+
+/*.container{
+  display:inline-flex;
+  flex: 1 1 300px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden ;
+}
+
+.icon{
+  padding: 0.8rem;
+}
+
+.searchbox{
+  border: 0;
+  flex: 1;
+}
+
+.searchButton{
+  color:white;
+  background: green;
+  border:0;
+  padding: 0.8rem;
+  border-radius:8px;
+}*/
+
+/* 
+*{
+  margin:0;
+  padding:0;
+}
+
+.container{
+background-color: #2b2d42;
+display: flex;
+flex-flow: row wrap;
+justify-content: stretch;
+}
+
+.container a{
+  display:inline-block;
+  padding:25px;
+  margin:0 25px;
+  text-align:center;
+  text-decoration: none;
+  color: #ffff;
+}
+
+.container a{
+  list-style-type:none;
+}
+
+.container a:hover{
+  background-color: lightsteelblue;
+}*/
+
+/*
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.item{
+  margin:5px;
+}
+
+.conatiner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:5px;
+}
+img{
+  border:0;
+}*/
+
+.row{
+  display:flex;
+  align-items: stretch;
+}
+.row  .label{
+  flex: 0 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.row .container {
+flex: 1;
+display: flex;
+justify-content: flex-start;
+}
+
+.row  .dish{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pasta{
+  background-color: pink;
+}
+
+.pizza{
+  background-color: yellow;
+}
+
+.barito{
+  background-color: green;
+}
