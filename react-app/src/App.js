@@ -1,12 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+//import InputComponent from './components/InputComponent';
 //import Promo from './components/Promo';
 //import Header from './components/Header';
 //import Sidebar from './components/Sidebar';
 //import Main from './components/Main';
 //import ToggleBoolean from './components/ToggleBoolean';
 //import pasta from './pasta.png';
-import Card from './components/Card';
+//import Card from './components/Card';
+//import Btn from './components/Btn';
+//import ModeToogler from './components/ModeToggler';
+//import Dog from './components/Dog';
+import State from './components/State';
+import React, { useState } from 'react';
 
 /*function Heading(){
   return (
@@ -14,17 +20,23 @@ import Card from './components/Card';
   );
 }*/
 
-function Logo(props){
+/*function Logo(props){
   const userPic = <img src = {pasta} />
   return userPic;
-}
+}*/
 
 
 
 function App() {
+  const [word,setWord] = React.useState('Eat');
+
+  function handleClick(){
+  setWord('Drink');
+}
   return ( 
     <div className="App"> 
-      
+    <State message={ word  +  "at little lemon"}/>
+    <button onClick={handleClick}>Click me</button>
     {/*<Header name="Anna" color="purple"/>
       <Main greet="Howdy"/>
       <Sidebar greet="Hi"/>
@@ -42,7 +54,15 @@ function App() {
         <Card  h2="Second card's h2" h3="Second card's h3"/> 
         <Card  h2="Third card's h2" h3="Third card's h3"/>
           </h1>*/}
-          
+
+           {/*<Btn />*/}
+
+
+           {/*<ModeToogler/>*/}
+             {/*<Dog/>*/}
+            {/*<InputComponent/>*/}
+
+
         </div>
 
   );
