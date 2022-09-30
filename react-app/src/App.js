@@ -11,14 +11,16 @@ import './App.css';
 //import Btn from './components/Btn';
 //import ModeToogler from './components/ModeToggler';
 //import Dog from './components/Dog';
-import State from './components/State';
+//import State from './components/State';
 import React, { useState } from 'react';
-
+import MealsProvider from './providers/MealsProvider';
+import MealsList from './components/MealsList';
+import Counter from './components/Counter';
 
 
 // prop drilling concept    
 
-function Main(props){
+{/*function Main(props){
   return <Header msg= {props.msg} />
 }
 
@@ -48,7 +50,7 @@ function Button(props){
       <button onClick={() => alert(props.msg)}>Click me</button>
        </div>
   );
-}
+}*/}
 
 /*function Heading(){
   return (
@@ -66,7 +68,13 @@ function Button(props){
 function App() {
   return ( 
     <div className="App"> 
-    <Main msg="I passed through the Header and the Wrapper and I reached the Button component"/>
+    <MealsProvider>
+      <MealsList />
+      <Counter />
+    </MealsProvider>
+    
+    
+    {/*<Main msg="I passed through the Header and the Wrapper and I reached the Button component"/>*/}
   
   {/*const [word,setWord] = React.useState('Eat');
 
