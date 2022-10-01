@@ -12,10 +12,13 @@ import './App.css';
 //import ModeToogler from './components/ModeToggler';
 //import Dog from './components/Dog';
 //import State from './components/State';
-import React, { useState } from 'react';
-import MealsProvider from './providers/MealsProvider';
-import MealsList from './components/MealsList';
-import Counter from './components/Counter';
+//import React, { useState } from 'react';
+//import MealsProvider from './providers/MealsProvider';
+//import MealsList from './components/MealsList';
+//import Counter from './components/Counter';
+import AboutMe from './AboutMe';
+import HomePage from './HomePage';
+import { Routes, Route,Link} from 'react-router-dom';
 
 
 // prop drilling concept    
@@ -68,10 +71,19 @@ function Button(props){
 function App() {
   return ( 
     <div className="App"> 
-    <MealsProvider>
+    <nav className="nav">
+    <Link to="/" className="nav-item">Homepage</Link>
+        <Link to="/about" className="nav-item">About Little Lemon</Link>
+        
+      </nav>
+      <Routes>
+      <Route path ="/" element={<HomePage/>} />
+      <Route path ="/about-me" element={<AboutMe/>} />
+      </Routes>
+    {/*<MealsProvider>
       <MealsList />
       <Counter />
-    </MealsProvider>
+  </MealsProvider>*/}
     
     
     {/*<Main msg="I passed through the Header and the Wrapper and I reached the Button component"/>*/}
