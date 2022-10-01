@@ -16,9 +16,9 @@ import './App.css';
 //import MealsProvider from './providers/MealsProvider';
 //import MealsList from './components/MealsList';
 //import Counter from './components/Counter';
-import AboutMe from './AboutMe';
-import HomePage from './HomePage';
-import { Routes, Route,Link} from 'react-router-dom';
+//import AboutMe from './AboutMe';
+//import HomePage from './HomePage';
+//import { Routes, Route,Link} from 'react-router-dom';
 
 
 // prop drilling concept    
@@ -69,9 +69,30 @@ function Button(props){
 
 
 function App() {
+  const time= new Date();
+  const day = time.toLocaleDateString("en-US", {weekday: "long"});
+  const morning = time.getHours() >=6 && time.getHours() <= 19;
+  let dayMessage;
+
+  if(day.toLowerCase() === "monday"){
+    dayMessage =`Happy ${day}`;
+  }else if (day.toLowerCase() === "tuesday"){
+    dayMessage =`${day}, four days to go`;
+  }else if (day.toLowerCase() === "wednesday"){
+    dayMessage =`${day}, half way there`;
+  }else if (day.toLowerCase() === "thursday"){
+    dayMessage =`${day},start planning the weekend`;
+  }else if (day.toLowerCase() === "friday"){
+    dayMessage =`${day}, woo-hoo weekend coming!`;
+  }else{
+    dayMessage= "Stay clam and keep having fun";
+  }
   return ( 
     <div className="App"> 
-    <nav className="nav">
+      <h1> {dayMessage}</h1>
+      {morning ? <h2>Have you had breakfat yet?</h2> : ''}
+
+    {/*<nav className="nav">
     <Link to="/" className="nav-item">Homepage</Link>
         <Link to="/about" className="nav-item">About Little Lemon</Link>
         
@@ -79,7 +100,7 @@ function App() {
       <Routes>
       <Route path ="/" element={<HomePage/>} />
       <Route path ="/about-me" element={<AboutMe/>} />
-      </Routes>
+  </Routes>*/}
     {/*<MealsProvider>
       <MealsList />
       <Counter />
