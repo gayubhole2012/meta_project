@@ -19,7 +19,9 @@ import './App.css';
 //import AboutMe from './AboutMe';
 //import HomePage from './HomePage';
 //import { Routes, Route,Link} from 'react-router-dom';
-
+//import rooftops from './assets/Images/roof-top.jpeg';
+//import ReactPlayer from 'react-player';
+import Calculator from './components/Calculator';
 
 // prop drilling concept    
 
@@ -69,7 +71,46 @@ function Button(props){
 
 
 function App() {
-  const time= new Date();
+return(
+  <div className="App">
+<Calculator />
+  
+{/*const url = "https://www.youtube.com/watch?v=ysz5S6PUM-U";
+  return(
+    <div className="App">
+      <h1>React Video Player</h1>
+      <ReactPlayer
+      url={vidurl}
+      playing={false}
+      volume={0.5}
+  />*/}
+
+
+  
+  
+  
+  {/*const randomImageUrl = "https://picsum.photos/200/300";
+  return ( 
+    <div className="App"> 
+<h1>Three images with some styling</h1>
+<img
+     height={200}
+     src={rooftops}
+     alt="An image of a NewYork"
+     />
+
+     <img
+     height={200}
+     src={require("./assets/Images/roof-top.jpeg")}
+     alt="an image of a NewYork"
+     />
+     <img
+     src={randomImageUrl}
+     height={200}
+      alt="an image of a NewYork"
+  />   */}
+
+  {/*const time= new Date();
   const day = time.toLocaleDateString("en-US", {weekday: "long"});
   const morning = time.getHours() >=6 && time.getHours() <= 19;
   let dayMessage;
@@ -90,7 +131,7 @@ function App() {
   return ( 
     <div className="App"> 
       <h1> {dayMessage}</h1>
-      {morning ? <h2>Have you had breakfat yet?</h2> : ''}
+  {morning ? <h2>Have you had breakfat yet?</h2> : ''} */}
 
     {/*<nav className="nav">
     <Link to="/" className="nav-item">Homepage</Link>
