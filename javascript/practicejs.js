@@ -197,6 +197,49 @@ function myLocalScope(){
   console.log(val);
 }
 myLocalScope(); //5
-console.log(val); //error val is not defined
+//console.log(val); //error val is not defined
 
-//
+
+//global vs local scope in function
+var outerWear = "T-Shirt"; //global scope
+function outfit(){
+  var outerWear = "Sweter"; //local scope
+  return outerWear;
+}
+console.log(outfit()); //Sweter     local varable outerWear took presedance over global variable 
+
+
+//return a value from function with return
+function myTimes(num){
+  return num * 3;
+}
+console.log(myTimes(5));//15
+
+//understanding undefined value returned from function
+
+var sum = 0;
+function addFive(){
+  sum += 5;
+}//function addFive() doesnt have a return statement so it will process the inner code but the returned value is undefined
+
+//assignment with a returned value
+var changed = 0;
+function change(num){
+  return (num + 5) / 3;
+  }
+  changed =change(10);// return value is 5 store in changed variable
+  console.log(changed); // 5
+
+  //stand in line
+  //JSON stringify() method converts a JavaScript object or value to a JSON string
+
+  function inLine(arr, item){
+    arr.push(item);
+    return arr.shift(); //shift() method removes the first element from an array and returns that removed element.
+  }
+  var arrList = [1,2,3,4,5];
+  console.log("Before: " + JSON.stringify(arrList));
+  console.log(inLine(arrList, 6));
+  console.log("After: " + JSON.stringify(arrList));
+
+  
