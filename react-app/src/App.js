@@ -21,10 +21,18 @@ import './App.css';
 //import { Routes, Route,Link} from 'react-router-dom';
 //import rooftops from './assets/Images/roof-top.jpeg';
 //import ReactPlayer from 'react-player';
-import Calculator from './components/Calculator';
+//import Calculator from './components/Calculator';
+//import Map from './components/Map';
+//import MapAssignment from './components/MapAssignment';
+ //import Registration from './components/Registration';
+//import ClassCounter from './components/ClassCounter';
+//import HookObject from './components/HookObject';
+//import HookArray from './components/HookArray';
+import PracticeuseState from './components/PracticeuseState';
+import { useEffect, useState } from 'react';
+//import UseEffect from './components/UseEffect';
 
 // prop drilling concept    
-
 {/*function Main(props){
   return <Header msg= {props.msg} />
 }
@@ -70,10 +78,26 @@ function Button(props){
 
 
 
-function App() {
-return(
+// primitive values - passed by value - number, string, boolean
+// pass by reference - array, object
+// memeory [{ name: 'swap' }][][][][][][][{ name: 'swap' }] 
+
+function App(){
+
+  return (
   <div className="App">
-<Calculator />
+
+
+
+    {/*<UseEffect />*/}
+ <PracticeuseState />
+    {/*<HookArray />*/}
+     {/*<HookObject/>*/}
+    {/*<ClassCounter/>*/}
+   {/*<Registration />*/}
+    {/*<MapAssignment />*/}
+{/*<Map />*/}
+
   
 {/*const url = "https://www.youtube.com/watch?v=ysz5S6PUM-U";
   return(
