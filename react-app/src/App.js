@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+//import UseStateHook from './components/UseStateHook';
 //import InputComponent from './components/InputComponent';
 //import Promo from './components/Promo';
 //import Header from './components/Header';
@@ -28,9 +29,11 @@ import './App.css';
 //import ClassCounter from './components/ClassCounter';
 //import HookObject from './components/HookObject';
 //import HookArray from './components/HookArray';
-import PracticeuseState from './components/PracticeuseState';
-import { useEffect, useState } from 'react';
+//import PracticeuseState from './components/PracticeuseState';
+//import { useEffect, useState } from 'react';
 //import UseEffect from './components/UseEffect';
+import FetchData from './components/FetchData';
+
 
 // prop drilling concept    
 {/*function Main(props){
@@ -87,10 +90,10 @@ function App(){
   return (
   <div className="App">
 
-
-
+<FetchData />
+      {/*<UseStateHook/>*/}
     {/*<UseEffect />*/}
- <PracticeuseState />
+ {/*<PracticeuseState />*/}
     {/*<HookArray />*/}
      {/*<HookObject/>*/}
     {/*<ClassCounter/>*/}
